@@ -11,13 +11,16 @@
     color: #333;
 }
 
-h1, h2, h3, h4 {
+h1, 
+h2,
+h3,
+h4 {
     margin-bottom: 1 rem;
 }
 
 h1 {
     font-size: 5.4rem;
-    color: #5Ea5eb;
+    color: #56a5eb;
     margin-bottom: 5rem;
 }
 
@@ -91,6 +94,7 @@ h3 {
 .btn:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
     transform: transform 150ms;
 }
 
