@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Quiz</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/game.css" />
+
 </head>
 <body>
     <!-- header view highscore and timer -->
@@ -22,7 +24,7 @@
             <div id="home" class="flex-center flex-column">
                 <h1 class="h1 mb-4">Coding Quiz</h1>
                 <p class="lead mb-4">Try to answer the following code-related questions with time limit. Keep in mind that the incorrect answers will penalize your scoretime by 10 secs!</p>
-                <button type="button" class="btn btn-primary btn-lg" id="startQuiz">Start Quiz</button>>
+                <button type="button" class="btn btn-primary btn-lg" id="startQuiz">Start Quiz</button>
             </div>
 
             <!-- quiz questions -->
@@ -43,8 +45,27 @@
                     </div>
                 </div>
             </div>
+
+            <!-- enter high score -->
+            <div class="container" id="inputScore">
+                <h1 class="h1 mb-4">All Done!</h1>
+                <p class="lead mb-4">Your Final Score": <span id="score"></span></p>
+                <p class="lead mb-4">Enter Initials: <input type="text" id="initials"></p>
+                <button type="button" class="btn btn-primary btn-lg" id="submitInitials">Submit</button>
+            </div>
+
+            <!-- view highscores -->
+            <div class="container" id="highScores">
+                <h1 class="h1 mb-4 font-weight-bold">Highscores</h1>
+                <div class="container h4 mb-4" id="scores">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" id="goBack">Go Back</button>
+                <button type="button" class="btn btn-primary btn-lg" id="clearScores">Clear Scores</button>
+            </div>
         </div>
     </div>
+
+    <!-- script to questions and quiz -->
 <script src="./assets/js/script.js"></script>
 </body>
 </html>
