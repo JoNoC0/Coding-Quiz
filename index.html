@@ -8,12 +8,42 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-    <div class="container">
-       <div id="home" class="flex-center flex-column">
-           <h1>Coding Quiz</h1>
-           <a class="btn" href="./assets/html/game.html">Play</a>
-           <a class="btn" href="./assets/html/highscore.html">High Scores</a>
-       </div>
+    <!-- header view highscore and timer -->
+    <div class="container mt-5">
+        <div id="row">
+            <div id="viewHiScores" class="col-md-4">View Highscores</div>
+            <div class="col-md-2 ml-auto h2">Time: <span id="timer">0</span></div>
+        </div>
+    </div>
+    <!-- end of header -->
+    <div class="container mt-3">
+        <div class="jumbotron jumbotron-fluid text-center">
+            <!-- homescreen -->
+            <div id="home" class="flex-center flex-column">
+                <h1 class="h1 mb-4">Coding Quiz</h1>
+                <p class="lead mb-4">Try to answer the following code-related questions with time limit. Keep in mind that the incorrect answers will penalize your scoretime by 10 secs!</p>
+                <button type="button" class="btn btn-primary btn-lg" id="startQuiz">Start Quiz</button>>
+            </div>
+
+            <!-- quiz questions -->
+            <div id="quiz" class="container">
+                <h1 id="question" class="h1 mb-4"></h1>
+                <div id="answers" class="container">
+                    <div class="row">
+                        <button type="button" class="btn btn-primary btn-lg btn-block mb-3 text-left" id="1"></button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-primary btn-lg btn-block mb-3 text-left" id="2"></button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-primary btn-lg btn-block mb-3 text-left" id="3"></button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-primary btn-lg btn-block mb-3 text-left" id="4"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 <script src="./assets/js/script.js"></script>
 </body>

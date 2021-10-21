@@ -1,9 +1,9 @@
 // variables for timer
 // var reference elements on HTML
-
 var timer = 60;
 var timerEl = document.getElementById("timer");
 
+// timer to start quiz with countdown by 1 seccond
 function startQuiz() {
     var startTimer = setInterval(function() {
         timer--
@@ -13,7 +13,7 @@ function startQuiz() {
         }
     }, 1000)
 }
-
+// quiz questions, answer, and choices array
 var questionsArr = [{
     questions: "blah blah blah",
     answer: "blah blah",
